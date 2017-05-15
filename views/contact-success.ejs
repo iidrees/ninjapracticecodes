@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	    <style> 
+   	        body{ background: skyblue; font-family: verdana; color: #fff; padding: 30px;}
+   	        h1, form {font-size: 48; text-transform: uppercase; line-spacing: 2px; text-align: center;}
+   	        p {font-size: 16px; text-align: center;}
+   	    </style>
+   </head>
+   <body>
+      <% include partial/navs.ejs %>
+
+   	<h1>SUCCESS!</h1>
+   	
+    <!--   <p>First name: <%#= qs.name %></p>
+      <p>Surname: <%#= qs.surname %></p> -->
+
+
+      <p>Thank you for getting in touch with <%= data.who %></p>
+      <p>We shall endeavour to pass on the message to the <%= data.department %> department where <%= data.who %> is.</p>
+      <p>You will be contacted on your email <%= data.email %></p>
+
+
+   </body>
+</html>
